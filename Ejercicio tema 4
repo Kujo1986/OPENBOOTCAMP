@@ -1,0 +1,56 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+public class Main {
+    public Main() {
+    }
+
+    public static void main(String[] args) {
+        int numeroIf = 0;
+        if (numeroIf < 0) {
+            System.out.println("es negativo");
+        } else if (numeroIf > 0) {
+            System.out.println("es positivo");
+        } else {
+            System.out.println("la variable numeroIf es 0");
+        }
+
+        int numeroWhile = 0;
+
+        while(numeroWhile < 3) {
+            System.out.println(numeroWhile);
+            ++numeroWhile;
+
+            while(true) {
+                System.out.println(numeroWhile);
+                ++numeroWhile;
+                if (numeroWhile >= 3) {
+                    break;
+                }
+            }
+        }
+
+        for(int numeroFor = 0; numeroFor <= 3; ++numeroFor) {
+            System.out.println(numeroFor);
+        }
+
+        switch ("OTOÑO") {
+            case "VERANO":
+                System.out.println("ES VERANO");
+                break;
+            case "OTOÑO":
+                System.out.println("ES OTOÑO");
+                break;
+            case "INVIERNO":
+                System.out.println("ES INVIERNO");
+                break;
+            case "PRIMAVERA":
+                System.out.println("ES PRIMAVERA");
+            default:
+                System.out.println("Estoy en default");
+        }
+
+    }
+}
